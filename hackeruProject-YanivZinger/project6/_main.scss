@@ -1,0 +1,14 @@
+.leftseven {
+    background-image: url(../images/Coffee.png);
+    height: $basehight;
+    width: 50vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100%;
+}
+
+.rightseven {
+    width: 30vw;
+    height: $basehight;
+    border: 1px solid #000;
+}

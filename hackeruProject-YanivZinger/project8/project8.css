@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.project-six {
+  width: 80vw;
+  margin-bottom: 20vh;
+  height: 120vh;
+  margin: auto;
+}
+
+.ulsix {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 2vh;
+  color: white;
+  font-size: 2.5rem;
+}
+
+.headersix {
+  background-color: blue;
+  border-radius: 50%;
+  margin-bottom: 10vh;
+}
+
+.h1six {
+  padding-bottom: 5vh;
+}
+
+.mainsix {
+  margin-bottom: 10vh;
+  text-align: justify;
+  text-align: center;
+  line-height: 1.5;
+  font-family: serif;
+  font-size: 1.1rem;
+  color: rgb(0, 0, 0);
+}
+
+.mb-3 {
+  width: 20vw;
+  padding-left: 30vw;
+}
+
+.footersix {
+  background-color: blue;
+  padding: 50px;
+}
+
+.ulfooter {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  width: 80vw;
+}
+.ulfooter li {
+  text-decoration: none;
+}
+.ulfooter li a {
+  text-decoration: none;
+}/*# sourceMappingURL=project6.css.map */

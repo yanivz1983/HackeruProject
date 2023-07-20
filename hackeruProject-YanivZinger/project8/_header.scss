@@ -1,0 +1,19 @@
+.ulsix {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2vh;
+    color: white;
+    font-size: $headerSize;
+}
+
+.headersix {
+    background-color: blue;
+    border-radius: 50%;
+    margin-bottom: 10vh
+}
+
+.h1six {
+    padding-bottom: 5vh;
+}
