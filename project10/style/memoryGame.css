@@ -1,0 +1,104 @@
+body {
+    background: rgb(210, 88, 172);
+    background: linear-gradient(197deg, rgba(210, 88, 172, 1) 37%, rgba(255, 0, 35, 1) 100%);
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: 'Rocher';
+    text-align: center;
+    font-size: 40px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+
+.col {
+    margin-bottom: 5px;
+    margin-left: 5vw;
+    ;
+}
+
+.row {
+    margin: 10px;
+}
+
+img {
+    height: 140px;
+}
+
+.cardFace {
+    display: none;
+}
+
+.backCard {
+    display: block;
+}
+
+@media only screen and (max-width: 800px) {
+    img {
+        height: 100px;
+    }
+}
+
+.btn {
+    padding: 0 30px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.modal {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 20% auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 40%;
+    background-color: rgb(0, 229, 255);
+}
+
+.youWon {
+    text-align: center;
+    color: red;
+    font-size: 50px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.attempts {
+    margin-left: 5%;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: -8vh;
+}

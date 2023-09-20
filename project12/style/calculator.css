@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.card-body {
+    background-image: url(../images/calculator.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+#top {
+    height: 100%;
+    width: 100%;
+}
+
+#quest {
+    font-size: 3rem;
+    font: bolder;
+    width: 100%;
+    height: 100%;
+}
+
+#answer {
+    width: 100%;
+    text-align: center;
+}
+
+
+
+.btn {
+    width: 100%;
+}
+
+#quest {
+    width: 100%;
+    text-align: center;
+}

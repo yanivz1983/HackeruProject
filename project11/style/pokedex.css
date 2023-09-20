@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+body {
+  background-color: rgb(43, 0, 255);
+  color: white;
+  margin: 0;
+  font-family: rubik;
+  padding: 20px;
+}
+
+.container {
+  padding: 30px;
+  margin: 0 auto;
+}
+
+#h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 5rem;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  color: white;
+}
+
+#pokedex {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 40px;
+  padding-inline-start: 0;
+}
+
+.card {
+  list-style: none;
+  padding: 40px;
+  background-color: #f4f4f4;
+  color: #222;
+  text-align: center;
+}
+
+.card:hover {
+  animation: bounce 0.5s linear;
+}
+
+.card-title {
+  text-transform: capitalize;
+  margin-bottom: 0px;
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.card-subtitle {
+  margin-top: 5px;
+  color: #666;
+  font-weight: lighter;
+}
+
+.card-image {
+  height: 180px;
+}
+
+@keyframes bounce {
+  20% {
+    transform: translateY(-6px);
+  }
+
+  40% {
+    transform: translateY(0px);
+  }
+
+  80% {
+    transform: translateY(-2px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
