@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/ShoppingList.css">
+    <script src="https://kit.fontawesome.com/8606e6b9a7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="addListContainer m-3">
+        <div class="d-flex justify-content-center">
+            <i class="fa-solid fa-plus toggleMenu m-1"></i>
+            <h1 class="m-2">TO DO LIST</h1>
+        </div>
+        <div class="container addList hide">
+            <div class="mb-3">
+                <label for="listInput" class="form-label"></label>
+                <input type="text" class="form-control" id="listInput"
+                    placeholder="Add List / Remove List (write the name of folder)">
+            </div>
+            <button class="btn btn-primary add" id="addBtn">Add</button>
+            <button class="btn remove btn-danger" id="addBtn2">Remove</button>
+
+            <hr />
+            <ul id="list" class="list-group"></ul>
+        </div>
+    </div>
+
+    <div class="container listsContainer">
+
+    </div>
+
+
+    <script src="./script/ShoppingList.js"></script>
+</body>
+
+</html>

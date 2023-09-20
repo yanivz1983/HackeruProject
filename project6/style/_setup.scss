@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$textSize: 1.1rem;
+$headerSize: 2.5rem;
+$textColor: rgb(0, 0, 0);
+$baseWidth: 80vw;
+$basehight: 80vh;
+
+
+.project-seven {
+    width: $baseWidth;
+    margin-bottom: 20vh;
+    height: 120vh;
+    margin: auto;
+    display: flex;
+    margin-top: 10vh;
+}

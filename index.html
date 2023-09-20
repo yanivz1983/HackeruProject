@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Courgette&family=Patrick+Hand&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+
+        .container {
+            background-color: rgb(255, 255, 255);
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(10, 1fr);
+            text-align: center;
+            color: #000;
+            font-family: 'Comic Neue', cursive;
+            margin-top: 40px;
+        }
+
+
+        header {
+            grid-column: 1/4;
+            grid-row: 1/2;
+            height: 100px;
+        }
+
+
+        .navbar-brand,
+        .nav-linkactive,
+        .nav-link {
+            font-size: 2rem;
+            font-family: 'Comic Neue', cursive;
+            line-height: 1.5;
+        }
+
+        .navbar-text {
+            font-size: 1.5rem;
+            font-family: 'Comic Neue', cursive;
+            line-height: 1.5;
+            padding-right: 10px;
+        }
+
+        .profile-picture {
+            border-radius: 100%;
+        }
+
+
+
+        #intro {
+            background-color: rgb(38, 38, 39);
+            grid-column: 1/4;
+            grid-row: 1/2;
+            text-align: center;
+            text-align: justify;
+            line-height: 1.5;
+            padding: 50px;
+            font-family: 'Comic Neue', cursive;
+            font-size: 1.5rem;
+            border: 1px solid #000;
+            border-radius: 5%;
+            line-height: 1.5;
+            color: white;
+            padding-top: 75px;
+            background-image: url(images/dark-background-.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            background-size: 100%;
+            margin-top: 25px;
+        }
+
+        .type {
+
+            background-color: white;
+            grid-column: 1/4;
+            grid-row: 2/3;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        h4 {
+            color: rgb(168, 167, 167);
+            font-size: 2rem;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        #about {
+            background-color: white;
+            color: #000;
+            font-size: 1.5rem;
+            text-align: justify;
+            text-align: center;
+            grid-column: 1/4;
+            grid-row: 3/4;
+            padding: 50px;
+            line-height: 1.5;
+            font-family: serif;
+            margin-bottom: 100px;
+
+        }
+
+        h2 {
+            font-family: 'Comic Neue', cursive;
+            padding: 20px;
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        .projects {
+            grid-column: 1/4;
+            grid-row: 4/5;
+            font-size: 1.5rem;
+            text-align: justify;
+            text-align: center;
+            background-color: rgb(229, 225, 225);
+            color: rgb(7, 7, 7);
+            border-radius: 5%;
+            padding: 150px;
+            background-image: url(images/mockaroon.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            background-size: 100%;
+            font-weight: bold;
+        }
+
+        #containerp1 {
+            grid-column: 1/4;
+            grid-row: 5/6;
+        }
+
+        #mainprojects1 {
+            margin-top: 5vh;
+            color: rgb(97, 89, 89);
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .mini-containerone {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(242, 238, 238);
+            font-family: 'Comic Neue', cursive;
+            background-color: white;
+        }
+
+        .mini-containertwo {
+            grid-column: 1/4;
+            grid-row: 6/7;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(242, 238, 238);
+            margin-bottom: 0px;
+            font-family: 'Comic Neue', cursive;
+            background-color: white;
+        }
+
+        #containerp2 {
+            grid-column: 1/4;
+            grid-row: 7/8;
+        }
+
+        #mainprojects2 {
+            margin-bottom: 5vh;
+            color: rgb(97, 89, 89);
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .mini-containerthird {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(242, 238, 238);
+            margin-bottom: 0px;
+            font-family: 'Comic Neue', cursive;
+            background-color: white;
+        }
+
+        .mini-containerfour {
+            grid-column: 1/4;
+            grid-row: 8/9;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(242, 238, 238);
+            margin-bottom: 0px;
+            font-family: 'Comic Neue', cursive;
+            background-color: white;
+        }
+
+        .card-img-top {
+            width: 286px;
+            height: 200px;
+            object-fit: fill;
+            border-radius: 5%;
+        }
+
+        .card {
+            border-radius: 5%;
+        }
+
+        h3 {
+            color: black;
+            font-size: 3rem;
+            font-family: serif;
+        }
+
+        .btn.btn-primary.btn-lg {
+            margin-top: 40px;
+            width: 15vw;
+            background-color: black;
+            color: white;
+        }
+
+        .btn.btn-primary {
+            background-color: black;
+            border: 1px solid #fefefe;
+            color: white;
+        }
+
+        #contact {
+            background-image: url(images/melinda-gimpel-5Ne6mMQtIdo-unsplash.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            background-size: 100%;
+            background-color: rgb(220, 217, 217);
+            grid-column: 1/4;
+            grid-row: 9/11;
+            padding: 50px;
+            text-align: left;
+            padding-right: 750px;
+            color: white;
+            margin-top: 30px;
+            height: 800px;
+            border-radius: 5%;
+        }
+
+        .contact-h {
+            color: white;
+            font-size: 2rem;
+            text-align: left;
+
+        }
+
+        footer {
+            background-color: rgb(235, 235, 235);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 100px;
+            margin-bottom: 50px;
+        }
+
+        .rights {
+            background-color: rgb(3, 3, 11);
+            grid-column: 1/4;
+            grid-row: 13/14;
+            color: white;
+            height: 50px;
+            padding-top: 10px;
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 1400px) {}
+
+        @media (max-width: 1200px) {}
+
+
+        @media (max-width: 992px) {
+            .navbar-text {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            .mini-containerone {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .mini-containertwo {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .mini-containerthird {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .mini-containerfour {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .navbar-text {
+                display: none;
+            }
+
+        }
+
+
+        @media (max-width: 576px) {
+            .mini-containerone {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .mini-containertwo {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .mini-containerthird {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .mini-containerfour {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .navbar-text {
+                display: none;
+            }
+
+            #contact {
+
+                padding-right: 100px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sticky-top">
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#intro">INTRO</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#about">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#topprojects">PROJECTS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">CONTACT</a>
+                            </li>
+                        </ul>
+                        <a href="index.html"><span class="navbar-text">
+                                Yaniv-Z </span></a>
+                        <a href="index.html"><img class="profile-picture" src="images/test1.jpeg" alt=""></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="container">
+
+        <section id="intro">
+            <h2>Welcome</h2>
+            On this web-site you will find a Variety of my skills and abilities such as HTML, CSS, SASS and BOOTSTRAP.
+            my projects will show you how your web site can get his full potential and take it to the next level, with
+            the
+            latest invovations in Full-Stack devloping world, by making it more Efficient, productiv, and have better
+            user interface so you can attract more audiance.
+            <h4>"The edge of innovation"</h4>
+        </section>
+        <div class="type">
+            <a href="#"><img src="images/html.png" alt="HTML"></a>
+            <a href="#"><img src="images/css.png" alt="CSS"></a>
+            <a href="#"><img src="images/sass.png" alt="BootStrap"></a>
+            <a href="#"><img src="images/bootstrap.png" alt="SASS"></a>
+            <a href="#"><img src="images/javascript.png" alt="JS"></a>
+        </div>
+        <main id="about">
+            <img class="profile-picture" src="images/test1.jpeg" alt="">
+            <br><br>
+            <h2>ABOUT ME</h2>
+            Hi, my name is Yaniv Zinger and im a Full-stack devloper. I went to school in HackerU
+            where i aquire, front and back end development education such as CSS, SASS and BOOTSTRAP.
+            I come from a family of Software development and engginers and
+            I always wanted to be on the front line of the future where i can contribute to making life better
+            <br>
+            <br>
+            <a rel=path_to_file href="pdf/emmet.pdf" class="btn btn-primary">Resume</a>
+        </main>
+        <section class="projects">
+            <h2>Top Projects</h2>
+            Check out my latest work in Full-Stack Development such as - CSS, SASS and BOOTSTRAP.
+            Here you can vision how your website can look using its full potential by taking advantage of the lates
+            tools on the marke.
+        </section>
+
+        <div id="containerp1">
+            <h1 id="mainprojects1">First Main Projects</h1>
+            <div id="topprojects" class="mini-containerone mt-5 justify-content-evenly">
+                <div class="card" style="width: 18rem;">
+                    <img src="./project1/image/p1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's
+                            content.</p>
+                        <a href="project1/project1promo.html" class="btn btn-primary">Click Here</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./project2/images/p2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's
+                            content.</p>
+                        <a href="project2/project2promo.html" class="btn btn-primary">Click Here</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./project3/images/p3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's
+                            content.</p>
+                        <a href="project3/project3promo.html" class="btn btn-primary">Click Here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mini-containertwo mt-5 justify-content-evenly">
+            <div class="card" style="width: 18rem;">
+                <img src="./project4/images/p4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Project 4</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's
+                        content.</p>
+                    <a href="project4/project4promo.html" class="btn btn-primary">Click Here</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./project5/images/p5.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Project 5</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's
+                        content.</p>
+                    <a href="project5/project5promo.html" class="btn btn-primary">Click Here</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./project6/images/p6.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Project 6</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's
+                        content.</p>
+                    <a href="project6/project6promo.html" class="btn btn-primary">Click Here</a>
+                </div>
+            </div>
+        </div>
+        <div id="containerp2">
+            <h1 id="mainprojects2">Secound Main Projects</h1>
+            <div class="mini-containerthird mt-5 justify-content-evenly">
+                <div class="card" style="width: 18rem;">
+                    <img src="./project7/images/xoxoImg.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 7</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's
+                            content.</p>
+                        <a href="http://127.0.0.1:5502/project7/project7promo.html" class="btn btn-primary">Click
+                            Here</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./project8/images/screenBuilderImg.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 8</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's
+                            content.</p>
+                        <a href="http://127.0.0.1:5502/project8/project8promo.html" class="btn btn-primary">Click
+                            Here</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./project9/images/shoppinglist.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 9</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's
+                            content.</p>
+                        <a href="./project9/project9promo.html" class="btn btn-primary">Click Here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mini-containerfour mt-5 justify-content-evenly">
+            <div class="card" style="width: 18rem;">
+                <img src="./project10/images/MemoryGameImg.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Project 10</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's
+                        content.</p>
+                    <a href="http://127.0.0.1:5502/project10/project10promo.html" class="btn btn-primary">Click Here</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./project11/images/pokadexImg.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Project 11</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's
+                        content.</p>
+                    <a href="http://127.0.0.1:5502/project11/project11promo.html" class="btn btn-primary">Click Here</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./project12/images/calculatorPromo.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Project 12</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's
+                        content.</p>
+                    <a href="http://127.0.0.1:5502/project12/project12promo.html" class="btn btn-primary">Click
+                        Here</a>
+                </div>
+            </div>
+        </div>
+        <!-- &reg;&trade; -->
+        </section>
+        <div class="fixed-bottom">
+            <footer>
+                <a href="tel:050-990-1270"><img src="images/phone.png" alt=""></a>
+                <a href="mailto:yanivz1983@gmail.com"><img src="images/email.png" alt=""></a>
+                <a href="https://goo.gl/maps/V9WuQPsjoPa33dhi6"><img src="images/location Background Removed.png"
+                        alt=""></a>
+                <a href=""><img src="images/whatsapp.png" alt=""></a>
+                <a href=""><img src="images/linkedin.png" alt=""></a>
+                <a href=""><img src="images/facebook.png" alt=""></a>
+            </footer>
+        </div>
+        <div class="fixed-bottom">
+            <div class="rights">&copy; This Site Was Created By Yaniv. Z</div>
+        </div>
+        <div id="contact">
+            <h4 class="contact-h">Contact Us</h4>
+            Tell us what you think.
+            <br>
+            <br>
+            <br>
+            <form target="_blank" action="https://formsubmit.co/yanivz1983@gmail.com" method="POST" s>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Full Name</label>
+                    <input name="name" type="text" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input name="email" type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
+                    <input name="number" type="text" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="mb-3">
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Content</label>
+                        <textarea name="message" class="form-control" id="exampleFormControlTextarea1"
+                            rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

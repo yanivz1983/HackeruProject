@@ -1,0 +1,103 @@
+h1 {
+    color: rgb(93, 115, 175);
+}
+
+.hide {
+    display: none;
+}
+
+.wide {
+    margin-top: 5px;
+    width: 515px;
+}
+
+input {
+    background-color: rgb(235, 235, 235);
+    width: 515px !important;
+}
+
+.size {
+    height: 35px;
+
+}
+
+li {
+    list-style-type: none;
+    font-size: 1.5rem;
+    color: rgb(167, 172, 175);
+}
+
+.add {
+    padding: 3px 5vw;
+
+}
+
+.remove {
+    margin-top: 15px;
+    padding: 3px 4vw;
+    margin-bottom: 15px;
+}
+
+.fa-regular {
+    font-size: 1.5rem;
+    margin-right: 20px;
+    cursor: pointer;
+    color: rgb(4, 3, 3);
+}
+
+.fa-regular:hover {
+    color: rgb(208, 98, 98);
+}
+
+.important {
+    display: block !important;
+}
+
+.toggleMenu {
+    font-size: 3rem;
+    color: rgb(222, 147, 147);
+    padding-top: 1px;
+    border: 4px solid rgb(222, 147, 147);
+    border-radius: 100%;
+}
+
+.toggleMenu:hover {
+    color: rgb(192, 192, 192);
+}
+
+@media only screen and (max-width: 550px) {
+    .wide {
+        margin-top: 5px;
+        width: 400px;
+    }
+
+    input {
+        background-color: rgb(235, 235, 235);
+        width: 400px !important;
+    }
+}
+
+
+@media only screen and (max-width: 550px) {
+    .wide {
+        margin-top: 5px;
+        width: 400px;
+    }
+
+    input {
+        background-color: rgb(235, 235, 235);
+        width: 400px !important;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .wide {
+        margin-top: 5px;
+        width: 200px;
+    }
+
+    input {
+        background-color: rgb(235, 235, 235);
+        width: 200px !important;
+    }
+}
